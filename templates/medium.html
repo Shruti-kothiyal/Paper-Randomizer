@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main2.css') }}">
+
+        <title>Question Paper Generator</title>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+	<div class="qpg"><h1>Question Paper Generator</h1></div>
+
+	<div class="topmost">
+		<p>Roll no. ..............</p>
+		<p>B.Sc(IT) (SIXTH SEMESTER)</p>
+		<p>MID SEMESTER EXAMINATION,2020</p>
+		<p>COMPUTER GRAPHICS</p>
+		<p>Time- 1:30Hours</p>
+		<p>Maximum Marks-50</p>
+	</div>
+	<div class="note">
+		Note: All questions are compulsory
+	</div>
+	
+	<div class="set-name">Set A</div>
+	<div class="set-a">
+		<p>Q1. Attempt all parts </p>
+		<ol type="a"> 
+			{% for i in range(0, 6) %}
+                {% set ques = random.choice(setA["1"]) %}
+                {{setA["1"].remove(ques) or ''}}
+				<li>{{ques if ques is not none}}<span class="four">[1]</span></li>
+			{% endfor %}
+		</ol>
+		
+		<p>Q2. Attempt all parts </p>
+		<ol type="a"> 
+		{% for i in range(0, 6) %}
+                {% set ques = random.choice(setA["2"]) %}
+                {{setA["2"].remove(ques) or ''}}
+				<li>{{ques}}<span class="four">[2]</span></li>
+			{% endfor %}
+		</ol>
+	</div>
+	
+	
+	<div class="set-name">Set B</div>
+	<div class="set-b">
+		<p>Q3. Attempt all parts </p>
+		<ol type="a"> 
+			{% for i in range(0, 2) %}
+                {% set ques = random.choice(setB["4"]) %}
+                {{setB["4"].remove(ques) or ''}}
+				<li>{{ques}}<span class="four">[4]</span></li>
+			{% endfor %}
+		</ol>
+		
+		<p>Q4. Attempt all parts </p>
+		<ol type="a"> 
+		{% for i in range(0, 2) %}
+                {% set ques = random.choice(setB["4"]) %}
+                {{setB["4"].remove(ques) or ''}}
+				<li>{{ques}}<span class="four">[4]</span></li>
+			{% endfor %}
+		</ol>
+		
+		<p>Q5. Attempt all parts </p>
+		<ol type="a"> 
+		{% for i in range(0, 2) %}
+                {% set ques = random.choice(setB["4"]) %}
+                {{setB["4"].remove(ques) or ''}}
+				<li>{{ques}}<span class="four">[4]</span></li>
+			{% endfor %}
+		</ol>
+		
+		<p>Q6. Attempt all parts </p>
+		<ol type="a"> 
+		{% for i in range(0, 2) %}
+                {% set ques = random.choice(setB["4"]) %}
+                {{setB["4"].remove(ques) or ''}}
+				<li>{{ques}}<span class="four">[4]</span></li>
+			{% endfor %}
+		</ol>
+		
+	<div>
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

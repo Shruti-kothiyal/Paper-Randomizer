@@ -1,0 +1,36 @@
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  .drp-dwn-chp{
+      padding: 10px 20px;
+      border: 50px solid #dddddd;
+      border-radius: 3px;
+      margin-bottom: 20px;
+  }
+  .qpg{
+      text-align: center;
+  }
+  .heading{
+      text-align: center;
+  }
+  .all-btn{
+      text-align: center;
+  }
+  
+  
+  .chap-name{
+      background: #ffffff;
+      padding: 10px 20px;
+      border: 50px solid #dddddd;
+      border-radius: 3px;
+      margin-bottom: 20px;
+  }
+  
+  
