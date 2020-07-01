@@ -32,8 +32,7 @@ Run :
 
 
 # Flowchart
-
-mermaid
+```mermaid
 graph LR
 A(Add Questions) -- Chapter name, number and priority --> B[Submit]
 B --> C[Generate Easy Paper]
@@ -42,6 +41,7 @@ B --> E[Generate Hard Paper]
 C--> z(Paper Generated)
 D --> z
 E --> z
+```
 
 Paper Randomizer shows a question paper created, on refreshing you'll get new questions generated 
 
