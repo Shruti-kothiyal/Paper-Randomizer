@@ -25,10 +25,10 @@ Enviroment required :
 5. Flask
 6. JSON
 
-Run :
-7. Make sure to download the whole project. 
-9. Add question by clicking add questions button
-10. Run the whole project using web browser
+<br>Run :<br>
+7. Make sure to download the whole project.<br>
+9. Add question by clicking add questions button<br>
+10. Run the whole project using web browser<br>
 
 
 # Flowchart
@@ -46,10 +46,10 @@ E --> z
 Paper Randomizer shows a question paper created, on refreshing you'll get new questions generated 
 
 # Limitations
-1.) Minimum questions given with each priority should be
-  i)   Priority 1 -> 12 questions
-  ii)  Priority 2 -> 12 questions
-  iii) Priority 3 -> 8 questions
-  iv) Priority 4 -> 12 questions
+1.) Minimum questions given with each priority should be<br>
+  i)   Priority 1 -> 12 questions<br>
+  ii)  Priority 2 -> 12 questions<br>
+  iii) Priority 3 -> 8 questions<br>
+  iv) Priority 4 -> 12 questions<br>
   
 2.) Mid term question paper will be created with maximum marks 50
